@@ -1,0 +1,21 @@
+{
+	"recommendations": [
+		"dbaeumer.vscode-eslint",
+		"rvest.vs-code-prettier-eslint",
+		"esbenp.prettier-vscode",
+		"yoavbls.pretty-ts-errors",
+		"mtxr.sqltools",
+		"mtxr.sqltools-driver-pg",
+		"svelte.svelte-vscode",
+		"harshkothari.svelte-radar",
+		"Gruntfuggly.todo-tree",
+		"bradlc.vscode-tailwindcss",
+		"Catppuccin.catppuccin-vsc",
+		"Catppuccin.catppuccin-vsc-icons",
+		"davidanson.vscode-markdownlint",
+		"mhutchie.git-graph",
+		"sumitnalavade.vscode-readme-editor",
+		"ms-vscode.makefile-tools",
+		"editorconfig.editorconfig"
+	]
+}

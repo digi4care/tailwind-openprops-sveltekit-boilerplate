@@ -1,0 +1,73 @@
+{
+  "name": "css-tokens-with-tailwind-and-openprops",
+  "private": false,
+  "version": "1.0.0",
+  "description": "A modern CSS architecture using Tailwind CSS v4 and OpenProps to create a flexible, customizable design system with design tokens",
+  "type": "module",
+  "keywords": [
+    "tailwindcss",
+    "open-props",
+    "design-tokens",
+    "css",
+    "sveltekit",
+    "frontend"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/digi4care/css-tokens-with-tailwind-and-openprops.git"
+  },
+  "homepage": "https://github.com/digi4care/css-tokens-with-tailwind-and-openprops#readme",
+  "bugs": {
+    "url": "https://github.com/digi4care/css-tokens-with-tailwind-and-openprops/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "dev": "vite dev --host",
+    "build": "vite build",
+    "preview": "vite preview --host",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint ."
+  },
+  "devDependencies": {
+    "@eslint/compat": "^1.2.5",
+    "@eslint/js": "^9.18.0",
+    "@sveltejs/adapter-auto": "^6.0.0",
+    "@sveltejs/kit": "^2.16.0",
+    "@sveltejs/vite-plugin-svelte": "^5.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-svelte": "^3.0.0",
+    "globals": "^16.0.0",
+    "open-props": "^1.5.8",
+    "prettier": "^3.4.2",
+    "prettier-plugin-svelte": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "svelte": "^5.0.0",
+    "svelte-check": "^4.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.0.0",
+    "typescript-eslint": "^8.20.0",
+    "vite": "^6.2.6"
+  }
+}

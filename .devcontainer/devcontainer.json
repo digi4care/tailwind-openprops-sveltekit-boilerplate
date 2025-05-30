@@ -1,0 +1,104 @@
+{
+	"name": "SvelteKit & Tailwind CSS & OpenProps",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"shutdownAction": "stopCompose",
+	// Add the IDs of extensions you want installed when the container is created.
+	"customizations": {
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {
+				"window.title": "${activeEditorMedium}",
+				"window.titleBarStyle": "native",
+				"window.menuBarVisibility": "toggle",
+				"window.commandCenter": false,
+				"window.zoomLevel": 1,
+				"workbench.iconTheme": "symbols",
+				"workbench.startupEditor": "none",
+				"workbench.sideBar.location": "left",
+				"workbench.layoutControl.enabled": false,
+				"workbench.editor.enablePreview": false,
+				"workbench.editor.labelFormat": "short",
+				"workbench.tree.indent": 18,
+				"editor.lineNumbers": "on",
+				"editor.minimap.enabled": false,
+				"editor.bracketPairColorization.enabled": false,
+				"editor.cursorBlinking": "solid",
+				"editor.cursorSmoothCaretAnimation": "on",
+				"editor.scrollbar.horizontalScrollbarSize": 4,
+				"editor.scrollbar.verticalScrollbarSize": 4,
+				"explorer.compactFolders": false,
+				"explorer.autoReveal": false,
+				"breadcrumbs.enabled": false,
+				"symbols.hidesExplorerArrows": false,
+				// Prettier
+				"prettier.semi": false,
+				"prettier.useTabs": true,
+				"prettier.singleQuote": true,
+				"prettier.trailingComma": "es5",
+				"prettier.printWidth": 100,
+				// Formatting
+				"editor.formatOnSave": true,
+				"svelte.enable-ts-plugin": true,
+				"terminal.integrated.defaultProfile.linux": "bash",
+				"sqltools.connections": [
+					{
+						"name": "Container database",
+						"driver": "PostgreSQL",
+						"previewLimit": 50,
+						"server": "localhost",
+						"port": 5432,
+						"database": "postgres",
+						"username": "postgres",
+						"password": "postgres"
+					}
+				]
+			},
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"rvest.vs-code-prettier-eslint",
+				"esbenp.prettier-vscode",
+				"yoavbls.pretty-ts-errors",
+				"mtxr.sqltools",
+				"mtxr.sqltools-driver-pg",
+				"svelte.svelte-vscode",
+				"harshkothari.svelte-radar",
+				"Gruntfuggly.todo-tree",
+				"bradlc.vscode-tailwindcss",
+				"Catppuccin.catppuccin-vsc",
+				"Catppuccin.catppuccin-vsc-icons",
+				"davidanson.vscode-markdownlint",
+				"mhutchie.git-graph",
+				"sumitnalavade.vscode-readme-editor",
+				"ms-vscode.makefile-tools",
+				"editorconfig.editorconfig"
+			]
+		}
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"forwardPorts": [
+		4173,
+		5173,
+		5432
+	],
+	"portsAttributes": {
+		"4173": {
+			"label": "SvelteKit (Preview)",
+			"onAutoForward": "notify"
+		},
+		"5173": {
+			"label": "SvelteKit (Development)",
+			"onAutoForward": "notify"
+		},
+		"5432": {
+			"label": "PostgreSQL",
+			"onAutoForward": "notify"
+		}
+	}
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "bash scripts/install.sh",
+	// "postCreateCommand": "npm install"
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// "remoteUser": "node"
+}
