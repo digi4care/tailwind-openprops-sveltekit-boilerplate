@@ -1,103 +1,86 @@
 {
-  "window.title": "${activeEditorMedium}",
-  "window.titleBarStyle": "native",
-  "window.menuBarVisibility": "toggle",
-  "window.commandCenter": false,
-  "window.zoomLevel": 1,
-  "workbench.iconTheme": "catppuccin-mocha",
-  "workbench.startupEditor": "none",
-  "workbench.sideBar.location": "left",
-  "workbench.layoutControl.enabled": false,
-  "workbench.editor.enablePreview": false,
-  "workbench.editor.labelFormat": "short",
-  "workbench.tree.indent": 18,
-  "editor.lineNumbers": "on",
-  "editor.minimap.enabled": false,
-  "editor.bracketPairColorization.enabled": false,
-  "editor.cursorBlinking": "solid",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.scrollbar.horizontalScrollbarSize": 4,
-  "editor.scrollbar.verticalScrollbarSize": 4,
-  "explorer.compactFolders": false,
-  "explorer.autoReveal": false,
-  "breadcrumbs.enabled": false,
-  "symbols.hidesExplorerArrows": false,
-  "editor.fontFamily": "Monaspace Neon, MonoLisa, Geist Mono, Monocraft, JetBrains Mono, IBM Plex Mono, Mononoki Nerd Font, Droid Sans Mono, Anonymous Pro, Operator Mono Book, Fira Code, Cascadia Code",
-  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02'",
-  "editor.fontSize": 12,
-  "editor.lineHeight": 1.3,
-  "editor.tabSize": 2,
-  "editor.wordWrap": "on",
-  "terminal.integrated.fontFamily": "monospace",
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": false,
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
-  },
-  "prettier.semi": false,
-  "prettier.useTabs": false,
-  "prettier.tabWidth": 4,
-  "prettier.singleQuote": false,
-  "prettier.trailingComma": "none",
-  "prettier.printWidth": 100,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[svelte]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "svelte.enable-ts-plugin": true,
-  "editor.multiCursorModifier": "ctrlCmd",
-  "telemetry.telemetryLevel": "off",
-  "diffEditor.renderSideBySide": false,
-  "css.lint.unknownAtRules": "ignore",
-  "todo.timekeeping.finished.time": false,
-  "files.associations": {
-    "*.css": "tailwindcss"
-  },
-  "cssvar.files": [
-    "./node_modules/open-props/open-props.min.css",
-    // if you have an alternative path to where your styles are located
-    // you can add it in this array of files
-    "assets/styles/variables.css"
-  ],
-  "cssvar.ignore": [],
-  "cssvar.extensions": [
-    "css",
-    "postcss",
-    "svelte",
-    "tsx"
-  ],
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/*.code-search": true,
-    "**/.svelte-kit": true
-  },
-  "search.quickOpen.includeHistory": false,
-  "editor.linkedEditing": true,
-  "keyboard.dispatch": "keyCode",
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.activityBar.location": "default",
-  "[typescript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "makefile.configureOnOpen": false,
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
-  }
+	"window.title": "${activeEditorMedium}",
+	"window.zoomLevel": 1,
+	"workbench.iconTheme": "catppuccin-mocha",
+	"workbench.startupEditor": "none",
+	"workbench.sideBar.location": "left",
+	"workbench.layoutControl.enabled": false,
+	"workbench.editor.enablePreview": false,
+	"workbench.editor.labelFormat": "short",
+	"workbench.tree.indent": 18,
+	"editor.lineNumbers": "on",
+	"editor.minimap.enabled": false,
+	"editor.bracketPairColorization.enabled": false,
+	"editor.cursorBlinking": "solid",
+	"editor.cursorSmoothCaretAnimation": "on",
+	"editor.scrollbar.horizontalScrollbarSize": 4,
+	"editor.scrollbar.verticalScrollbarSize": 4,
+	"explorer.compactFolders": false,
+	"explorer.autoReveal": false,
+	"breadcrumbs.enabled": false,
+	"editor.fontFamily": "Monaspace Neon, MonoLisa, Geist Mono, Monocraft, JetBrains Mono, IBM Plex Mono, Mononoki Nerd Font, Droid Sans Mono, Anonymous Pro, Operator Mono Book, Fira Code, Cascadia Code",
+	"editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02'",
+	"editor.fontSize": 12,
+	"editor.lineHeight": 1.3,
+	"editor.tabSize": 2,
+	"editor.wordWrap": "on",
+	"terminal.integrated.fontFamily": "monospace",
+	"terminal.integrated.fontSize": 12,
+	"terminal.integrated.cursorStyle": "line",
+	"terminal.integrated.cursorBlinking": false,
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.shellIntegration.decorationsEnabled": "never",
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"prettier.semi": false,
+	"prettier.useTabs": false,
+	"prettier.tabWidth": 4,
+	"prettier.singleQuote": false,
+	"prettier.trailingComma": "none",
+	"prettier.printWidth": 100,
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"[svelte]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"svelte.enable-ts-plugin": true,
+	"editor.multiCursorModifier": "ctrlCmd",
+	"diffEditor.renderSideBySide": false,
+	"css.lint.unknownAtRules": "ignore",
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"cssvar.enable": true,
+	"cssvar.extensions": ["css", "postcss", "svelte", "tsx", "tailwindcss"],
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/bower_components": true,
+		"**/*.code-search": true,
+		"**/.svelte-kit": true
+	},
+	"search.quickOpen.includeHistory": false,
+	"editor.linkedEditing": true,
+	"workbench.editor.empty.hint": "hidden",
+	"workbench.activityBar.location": "default",
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"makefile.configureOnOpen": false,
+	"[markdown]": {
+		"editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"cssvar.files": ["**/*.css", "**/node_modules/open-props/src/index.css"]
 }
