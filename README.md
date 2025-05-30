@@ -1,6 +1,5 @@
 # Build Your Own CSS Tokens with Tailwind 4 and OpenProps
 
-
 This guide will walk you through setting up a modern CSS architecture using Tailwind CSS v4 and OpenProps to create a flexible, customizable design system with your own design tokens.
 
 ## Table of Contents
@@ -66,7 +65,7 @@ Edit `src/app.css` file with the basic configuration:
 @import 'open-props/style';
 
 @theme {
- /* We'll add our theme configurations here */
+	/* We'll add our theme configurations here */
 }
 ```
 
@@ -76,17 +75,17 @@ Tailwind v4 makes it easy to map your own font sizes using CSS custom properties
 
 ```css
 @theme {
- --font-size-*: initial;
- --font-size-00: var(--font-size-00);
- --font-size-0: var(--font-size-0);
- --font-size-1: var(--font-size-1);
- --font-size-2: var(--font-size-2);
- --font-size-3: var(--font-size-3);
- --font-size-4: var(--font-size-4);
- --font-size-5: var(--font-size-5);
- --font-size-6: var(--font-size-6);
- --font-size-7: var(--font-size-7);
- --font-size-8: var(--font-size-8);
+	--font-size-*: initial;
+	--font-size-00: var(--font-size-00);
+	--font-size-0: var(--font-size-0);
+	--font-size-1: var(--font-size-1);
+	--font-size-2: var(--font-size-2);
+	--font-size-3: var(--font-size-3);
+	--font-size-4: var(--font-size-4);
+	--font-size-5: var(--font-size-5);
+	--font-size-6: var(--font-size-6);
+	--font-size-7: var(--font-size-7);
+	--font-size-8: var(--font-size-8);
 }
 ```
 
@@ -102,10 +101,10 @@ Easily add beautiful gradients from OpenProps:
 
 ```css
 @theme {
- --background-image-gradient-1: var(--gradient-1);
- --background-image-gradient-2: var(--gradient-2);
- --background-image-gradient-3: var(--gradient-3);
- /* Add more gradients as needed */
+	--background-image-gradient-1: var(--gradient-1);
+	--background-image-gradient-2: var(--gradient-2);
+	--background-image-gradient-3: var(--gradient-3);
+	/* Add more gradients as needed */
 }
 ```
 
@@ -113,7 +112,7 @@ Usage:
 
 ```html
 <div class="bg-gradient-3">
- <!-- Your content -->
+	<!-- Your content -->
 </div>
 ```
 
@@ -125,21 +124,21 @@ Create adaptive utilities that automatically adjust for light and dark modes:
 
 ```css
 :root {
- --ink-1: var(--gray-9);
- --ink-2: var(--gray-7);
- --surface-1: var(--gray-2);
- --surface-2: var(--gray-1);
- --link: var(--indigo-6);
+	--ink-1: var(--gray-9);
+	--ink-2: var(--gray-7);
+	--surface-1: var(--gray-2);
+	--surface-2: var(--gray-1);
+	--link: var(--indigo-6);
 }
 
 @media (prefers-color-scheme: dark) {
- :root {
-  --ink-1: var(--gray-1);
-  --ink-2: var(--gray-5);
-  --surface-1: var(--gray-11);
-  --surface-2: var(--gray-10);
-  --link: var(--indigo-4);
- }
+	:root {
+		--ink-1: var(--gray-1);
+		--ink-2: var(--gray-5);
+		--surface-1: var(--gray-11);
+		--surface-2: var(--gray-10);
+		--link: var(--indigo-4);
+	}
 }
 ```
 
@@ -147,11 +146,11 @@ Create adaptive utilities that automatically adjust for light and dark modes:
 
 ```css
 @theme {
- --color-ink-1: var(--ink-1);
- --color-ink-2: var(--ink-2);
- --color-surface-1: var(--surface-1);
- --color-surface-2: var(--surface-2);
- --color-link: var(--link);
+	--color-ink-1: var(--ink-1);
+	--color-ink-2: var(--ink-2);
+	--color-surface-1: var(--surface-1);
+	--color-surface-2: var(--surface-2);
+	--color-link: var(--link);
 }
 ```
 
@@ -159,11 +158,11 @@ Now you can use these adaptive utilities in your components:
 
 ```html
 <div class="bg-surface-2">
- <header>
-  <h1 class="text-ink-1">Adaptive Heading</h1>
-  <p class="text-ink-2">This text automatically adapts to light/dark mode</p>
-  <a href="#" class="text-link">Adaptive Link</a>
- </header>
+	<header>
+		<h1 class="text-ink-1">Adaptive Heading</h1>
+		<p class="text-ink-2">This text automatically adapts to light/dark mode</p>
+		<a href="#" class="text-link">Adaptive Link</a>
+	</header>
 </div>
 ```
 
@@ -221,6 +220,7 @@ deno install
 The project includes a comprehensive `Makefile` with useful commands for development, building, testing, and maintaining your application:
 
 #### Project Management
+
 ```bash
 make create           # Create a new Svelte project
 make setup            # Install dependencies
@@ -228,6 +228,7 @@ make add pkg=package  # Add a new package
 ```
 
 #### Development
+
 ```bash
 make dev              # Start development server
 make build            # Build for production
@@ -236,6 +237,7 @@ make check            # Check for errors
 ```
 
 #### Testing
+
 ```bash
 make test             # Run tests
 make test-watch       # Run tests in watch mode
@@ -243,6 +245,7 @@ make test-coverage    # Generate test coverage
 ```
 
 #### Code Quality
+
 ```bash
 make lint             # Run linter
 make format           # Format code
@@ -250,6 +253,7 @@ make typecheck        # Check types
 ```
 
 #### Migrations
+
 ```bash
 make migrate          # Run available migrations
 make migrate-svelte5  # Migrate to Svelte 5
@@ -257,6 +261,7 @@ make migrate-kit2     # Migrate to SvelteKit 2
 ```
 
 #### Add-ons
+
 ```bash
 make add-drizzle      # Add Drizzle ORM
 make add-eslint       # Add ESLint
@@ -296,4 +301,3 @@ docker-compose up -d
 **Maintainer**: [Chris Engelhard](https://github.com/chrisengelhard)
 
 **License**: [MIT](https://github.com/digi4care/tailwind-openprops-sveltekit-boilerplate/blob/main/LICENSE)
-

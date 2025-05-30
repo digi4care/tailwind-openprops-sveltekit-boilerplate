@@ -77,11 +77,7 @@
 		}
 	},
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [
-		4173,
-		5173,
-		5432
-	],
+	"forwardPorts": [4173, 5173, 5432],
 	"portsAttributes": {
 		"4173": {
 			"label": "SvelteKit (Preview)",
