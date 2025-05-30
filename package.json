@@ -1,5 +1,5 @@
 {
-  "name": "css-tokens-with-tailwind-and-openprops",
+  "name": "tailwind-openprops-sveltekit-boilerplate-with-sveltekit",
   "private": false,
   "version": "1.0.0",
   "description": "A modern CSS architecture using Tailwind CSS v4 and OpenProps to create a flexible, customizable design system with design tokens",
@@ -16,11 +16,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/digi4care/css-tokens-with-tailwind-and-openprops.git"
+    "url": "https://github.com/digi4care/tailwind-openprops-sveltekit-boilerplate.git"
   },
-  "homepage": "https://github.com/digi4care/css-tokens-with-tailwind-and-openprops#readme",
+  "homepage": "https://github.com/digi4care/tailwind-openprops-sveltekit-boilerplate#readme",
   "bugs": {
-    "url": "https://github.com/digi4care/css-tokens-with-tailwind-and-openprops/issues"
+    "url": "https://github.com/digi4care/tailwind-openprops-sveltekit-boilerplate/issues"
   },
   "engines": {
     "node": ">=18.0.0",
