@@ -1,1 +1,6 @@
 @import 'tailwindcss';
+@import 'open-props/style';
+
+@theme {
+ /* We'll add our theme configurations here */
+}
