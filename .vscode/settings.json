@@ -54,9 +54,16 @@
 	"diffEditor.renderSideBySide": false,
 	"css.lint.unknownAtRules": "ignore",
 	"todo.timekeeping.finished.time": false,
-	"cssvar.files": ["./node_modules/open-props/open-props.min.css"],
+	"cssvar.files": [
+		"./node_modules/open-props/open-props.min.css"
+	],
 	"cssvar.ignore": [],
-	"cssvar.extensions": ["css", "postcss", "svelte", "tsx"],
+	"cssvar.extensions": [
+		"css",
+		"postcss",
+		"svelte",
+		"tsx"
+	],
 	"search.exclude": {
 		"**/node_modules": true,
 		"**/bower_components": true,
@@ -83,5 +90,8 @@
 	},
 	"[css]": {
 		"editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
 	}
 }
