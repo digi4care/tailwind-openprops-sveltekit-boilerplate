@@ -1,5 +1,6 @@
 # Build Your Own CSS Tokens with Tailwind 4 and OpenProps
 
+
 This guide will walk you through setting up a modern CSS architecture using Tailwind CSS v4 and OpenProps to create a flexible, customizable design system with your own design tokens.
 
 ## Table of Contents
@@ -13,6 +14,7 @@ This guide will walk you through setting up a modern CSS architecture using Tail
 - [Development Environment](#development-environment)
 - [Updating Dependencies](#updating-dependencies)
 - [References](#references)
+- [License](#license)
 
 ## Basic Setup
 
@@ -286,3 +288,12 @@ docker-compose up -d
 - [SvelteKit Documentation](https://kit.svelte.dev/)
 - [NVM Documentation](https://github.com/nvm-sh/nvm)
 - [npm-check-updates](https://www.npmjs.com/package/npm-check-updates)
+
+## License
+
+**Authors**: [Digi4Care](https://github.com/digi4care)
+
+**Maintainer**: [Chris Engelhard](https://github.com/chrisengelhard)
+
+**License**: [MIT](https://github.com/digi4care/tailwind-openprops-sveltekit-boilerplate/blob/main/LICENSE)
+
