@@ -16,6 +16,7 @@
 		"mhutchie.git-graph",
 		"sumitnalavade.vscode-readme-editor",
 		"ms-vscode.makefile-tools",
-		"editorconfig.editorconfig"
+		"editorconfig.editorconfig",
+		"phoenisx.cssvar"
 	]
 }
